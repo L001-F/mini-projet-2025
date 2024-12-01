@@ -1,0 +1,123 @@
+/* Body and general layout */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff; /* White background for the main layout */
+    color: #333; /* Dark text color for contrast */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Container styling for the cards */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Card Styling */
+.card {
+    background-color: #fff; /* White background for the cards */
+    border-radius: 16px; /* Rounded corners for smooth effect */
+    width: 280px;
+    height: 250px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.2s ease;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Title text in cards */
+.card h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #333; /* Dark text for titles */
+    margin: 15px 0 10px;
+}
+
+/* Text in cards */
+.card p {
+    font-size: 1.1rem;
+    color: #777; /* Lighter text for descriptions */
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Card Hover Effects */
+.card:hover {
+    transform: translateY(-8px); /* Slight lift effect */
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+    background-color: #eaf6ff; /* Light blue on hover */
+}
+
+/* Student card specific styling */
+#student-card {
+    background-color: #eaf6ff; /* Light blue background using the #DA9B2B palette */
+    border: 2px solid #0056b3; /* Blue border for student card */
+}
+
+/* Admin card specific styling */
+#admin-card {
+    background-color: #eaf6ff; /* Soft yellowish hue */
+    border: 2px solid #0056b3; /* Soft yellow border */
+}
+
+/* Home link button (back to index) */
+.home-link {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    font-size: 1.6em;
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+    border: 1px solid #ddd;
+    z-index: 1000;
+}
+
+/* Hover effect for home link */
+.home-link:hover {
+    background-color: #007bff; /* Blue on hover using #007bff */
+    color: #fff;
+    transform: scale(1.1); /* Scale up the icon */
+    box-shadow: 0 10px 20px rgba(0, 123, 255, 0.2);
+}
+
+/* Active effect when home link is clicked */
+.home-link:active {
+    transform: scale(1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card {
+        width: 90%;
+        height: 200px; /* Adjust card height on mobile */
+    }
+}

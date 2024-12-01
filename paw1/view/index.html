@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Document Request System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css"> <!-- Your CSS file -->
+</head>
+
+<body>
+  
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm" id="accueil">
+      <div class="container">
+          <a class="navbar-brand" href="#">
+              <img src="images/logo.png" alt="University Logo">
+          </a>
+
+              <button class="btn btn-primary ms-4 custom-button" type="button">
+                <a href="role.html">MonPortail</a>
+              </button>
+              
+          
+      </div>
+  </nav>
+    
+  
+  </header>
+
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicators (optional) -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+  
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+          <img src="images/img1.png" class="d-block w-100" alt="Hero Image 1">
+          <div class="hero-text text-center">
+              <h1>Collaborating for a Better Future</h1>
+              <p>Discover how we work together to build sustainable and innovative solutions.</p>
+          </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+          <img src="images/img2.png" class="d-block w-100" alt="Hero Image 2">
+          <div class="hero-text text-center">
+              <h1>Inspiring Change</h1>
+              <p>Join our initiatives to shape a better world and promote growth.</p>
+          </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+          <img src="images/img3.png" class="d-block w-100" alt="Hero Image 3">
+          <div class="hero-text text-center">
+              <h1>Towards a Sustainable Future</h1>
+              <p>Explore our programs focused on sustainability and technological innovation.</p>
+          </div>
+      </div>
+      <!-- Slide 4 -->
+      <div class="carousel-item">
+          <img src="images/img4.png" class="d-block w-100" alt="Hero Image 4">
+          <div class="hero-text text-center">
+              <h1>Unite Our Strengths</h1>
+              <p>Join our vision to turn challenges into concrete opportunities.</p>
+          </div>
+      </div>
+  </div>
+  
+  
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Précédent</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Suivant</span>
+    </button>
+  </div>
+
+    <!-- about -->
+    <section id="about-section" class="about-section">
+        <h2>About Computer Science Department</h2>
+        <div class="card mb-3 custom-card">
+            <div class="row g-0">
+              <div class="col-md-8 d-flex align-items-center"> <!-- Text Section -->
+                <div class="card-body">
+               
+                  <p class="card-text">
+                    Welcome to a hub of innovation and excellence! Our Computer Science Department offers a dynamic environment where theory meets practical application. We provide comprehensive programs in software engineering, web development, AI, cybersecurity, and more. With a strong focus on hands-on learning, collaborative projects, and cutting-edge research, we empower students to turn ideas into impactful solutions.
+                  </p>
+                  <p class="card-text">
+                    Our passionate faculty and vibrant community foster creativity, critical thinking, and professional growth. Whether you're aspiring to be a developer, data scientist, or tech leader, our department provides the tools and knowledge to shape your future in the ever-evolving world of technology.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4 d-flex justify-content-center align-items-center"> <!-- Image Section -->
+                <img src="images/img5.png" class="img-fluid rounded custom-image" alt="Computer Science Department Image">
+              </div>
+            </div>
+          </div>
+          
+    </section>
+    <section class="specialties-section py-5">
+        <div class="container">
+          <h2 >Our Specialties</h2>
+          <div class="row">
+            <!-- Card 1 -->
+<div class="col-md-4 mb-4">
+  <div class="card">
+    <img src="images/si.png" class="card-img-top" alt="Information Systems">
+    <div class="card-body">
+      <h5 class="card-title">Information (LMD)</h5>
+      <p class="card-text">This program focuses on developing strong foundations in Information Systems. Students gain expertise in managing IT infrastructure, analyzing systems, and understanding how to optimize organizational processes using modern technologies.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Card 2 -->
+<div class="col-md-4 mb-4">
+  <div class="card">
+    <img src="images/softwar.png" class="card-img-top" alt="Software Engineering">
+    <div class="card-body">
+      <h5 class="card-title">Software Engineering</h5>
+      <p class="card-text">In this specialty, students develop expertise in software design, development, and maintenance. The program offers a strong understanding of programming languages, algorithms, and the principles of building scalable and efficient software solutions.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Card 3 -->
+<div class="col-md-4 mb-4">
+  <div class="card">
+    <img src="images/rt.png" class="card-img-top" alt="Professional License">
+    <div class="card-body">
+      <h5 class="card-title">Professional License</h5>
+      <p class="card-text">it offers advanced training for students aiming to enhance their career prospects. It provides practical skills in specific sectors, preparing graduates for immediate employment in various industries with specialized knowledge and hands-on experience.</p>
+    </div>
+  </div>
+</div>
+
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+<!-- Clubs Section -->
+<section id="clubs" class="container my-5">
+  <h2> Our Clubs</h2>
+<!-- Clubs Container -->
+<div class="club-container">
+  <button class="scroll-btn prev-btn">❮</button>
+  
+  <!-- Club 1 -->
+  <div class="club-card active">
+    <div class="text">
+      <h4>IT Club</h4>
+      <p>Join our first club to enhance your skills in information technology. From programming to system analysis, you will gain valuable knowledge while networking with fellow enthusiasts.</p>
+    </div>
+    <img src="images/mlh.png" alt="IT Club">
+  </div>
+
+  <!-- Club 2 -->
+  <div class="club-card">
+    <div class="text">
+      <h4>Cybersecurity Club</h4>
+      <p>The second club focuses on cybersecurity and ethical hacking. Learn advanced techniques to protect digital assets and become proficient in securing networks and systems.</p>
+    </div>
+    <img src="images/cybers.png" alt="Cybersecurity Club">
+  </div>
+
+  <!-- Club 3 -->
+  <div class="club-card">
+    <div class="text">
+      <h4>Leadership & Innovation Club</h4>
+      <p>Become a part of our third club to develop leadership and innovation skills. Engage in exciting workshops, projects, and activities that foster creativity and teamwork.</p>
+    </div>
+    <img src="images/sec.png" alt="Leadership & Innovation Club">
+  </div>
+
+
+    <button class="scroll-btn next-btn">❯</button>
+  </div>
+</section>
+    <!-- event calendar -->
+<section id="event-calendar" class="event-calendar">
+  <h2>Event Calendar</h2>
+  <div class="event-container">
+      <div class="event-card">
+          <img src="images/cse.png" alt="Event 1" />
+          <div class="event-info">
+              <h3>March 18, 2024</h3>
+              <p>Start of CSE registration period</p>
+              <div class="tags">
+                  <span>Important Dates</span>
+                  <span>Academic Calendar</span>
+              </div>
+          </div>
+      </div>
+
+      <div class="event-card">
+          <img src="images/ent.png" alt="Event 2" />
+          <div class="event-info">
+              <h3>January 01, 2024</h3>
+              <p>Entrepreneurship: Where to start?</p>
+              <div class="tags">
+                  <span>Information Sessions</span>
+                  <span>Entrepreneurship</span>
+              </div>
+          </div>
+      </div>
+
+      <div class="event-card">
+          <img src="images/gdg.png" alt="Event 3" />
+          <div class="event-info">
+              <h3>July 09, 2024</h3>
+              <p>Cancelled: GDG visit!</p>
+              <div class="tags">
+                  <span>Meet ULaval</span>
+                  <span>Future Students</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+  <div class="container">
+    <div class="row">
+      <!-- Left Column (FAQ Accordion) -->
+      <div class="col-md-6">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        <div class="accordion" id="accordionExample">
+          <!-- Accordion Item 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                How can I access the student portal?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                To access the student portal, you must first register using your student ID and official email address. Once registered, you can log in at any time using your credentials to view important academic and administrative updates.
+              </div>
+            </div>
+          </div>
+          <!-- Accordion Item 2 -->
+         <!-- Accordion Item 2 -->
+<div class="accordion-item">
+  <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          How can I view my profile information?
+      </button>
+  </h2>
+  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          To view your profile information, log in to the portal and navigate to the "Profile" section. Here, you can check your personal details such as contact information and address. Please ensure your information is correct and up to date.
+      </div>
+  </div>
+</div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    What should I do if my document request is rejected?
+                </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    If your document request is rejected, check the reason for rejection in the "My Requests" section. Common reasons include incomplete information or missing attachments. Update the required details and resubmit your request.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  How can I track the status of my document request?
+              </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                  To track the status of your document request, log in to the portal and navigate to the "My Requests" section. Here, you will see a list of your submitted requests with their current statuses, such as "Pending," "In Progress," or "Ready for Pickup."
+              </div>
+          </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                Who can I contact for help with the portal?
+            </button>
+        </h2>
+        <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                If you need further assistance or have additional questions, please fill out the form available in the "Contact Us" section of this website. Our support team will get back to you promptly with the information you need.
+            </div>
+        </div>
+    </div>
+        </div>
+      </div>
+
+      <!-- Right Column (Form for Submitting More Questions) -->
+      <div class="col-md-6">
+        <h2 class="text-center mb-4">Submit a Question</h2>
+        <form id="submitQuestionForm">
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+          </div>
+          <div class="mb-3">
+            <label for="question" class="form-label">Your Question</label>
+            <textarea class="form-control" id="question" rows="4" placeholder="Write your question here..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Submit Question</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- footer -->
+    <footer id="footer" class="footer">
+      <div class="footer-container">
+          <div class="footer-left">
+              <h3>Department of Computer Science</h3>
+              <p>QF2C+W7H, Boumerdes, Boumerdes</p>
+              <p>Phone: 024 79 90 05 | Toll-free: 024 79 90 05</p>
+          </div>
+          <div class="footer-links">
+              <div>
+                  <ul>
+                      <li><a href="#">Email</a></li>
+                      <li><a href="#">IDUL and Password</a></li>
+                      <li><a href="#">Network Login</a></li>
+                      <li><a href="#">Capsule</a></li>
+                  </ul>
+              </div>
+              <div>
+                  <ul>
+                      <li><a href="#">Business Services</a></li>
+                      <li><a href="#">Press Room</a></li>
+                      <li><a href="#">Careers</a></li>
+                      <li><a href="#">PeopleSoft HR</a></li>
+                  </ul>
+              </div>
+              <div>
+                  <ul>
+                      <li><a href="#">Library</a></li>
+                      <li><a href="#">PEPS</a></li>
+                      <li><a href="#">Red and Gold</a></li>
+                      <li><a href="#">Residences</a></li>
+                      <li><a href="#">Parking</a></li>
+                  </ul>
+              </div>
+              <div>
+                  <h4>EMERGENCY MEASURES</h4>
+                  <p>Call: 024 79 90 05</p>
+              </div>
+          </div>
+          <div class="footer-right">
+              <div class="social-media">
+                  <a href="#"><i class="icon-facebook"></i></a>
+                  <a href="#"><i class="icon-linkedin"></i></a>
+                  <a href="#"><i class="icon-instagram"></i></a>
+                  <a href="#"><i class="icon-twitter"></i></a>
+                  <a href="#"><i class="icon-youtube"></i></a>
+              </div>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <img src="images/logo.png" alt="Université Laval Logo">
+          <img src="images/Plan Faculté.png" alt="Plan" class="zoom-out-plan">
+          <p>City of Boumerdes</p>
+      </div>
+      <div id="imageModal" class="image-modal">
+          <div class="modal-content">
+              <span class="close-btn">&times;</span>
+              <img id="fullImage" src="images/Plan Faculté.png" alt="Plan Faculté">
+          </div>
+      </div>
+  </footer>
+  
+    
+      <script src="script.js"></script> <!-- Link to JavaScript -->
+      <script src="s.js"></script> <!-- Link to JavaScript -->
+      
+</body>
+</html>
